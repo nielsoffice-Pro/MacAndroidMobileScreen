@@ -17,6 +17,27 @@ Yes, you *can* use your Mac laptop screen to view (and even control) your Androi
     ```bash
     brew install scrcpy
     ```
+✅ Step 1: Install ADB via Homebrew
+
+In your Mac Terminal, run the following command:
+```
+brew install android-platform-tools
+```
+This installs ADB and adds it to your PATH.
+
+✅ Step 2: Verify ADB Installation
+
+Once it's installed, confirm ADB is working by running:
+```
+adb devices
+```
+You should see your Android device listed. If it says “unauthorized,” check your phone and accept the USB debugging prompt.
+
+✅ Step 3: Run Scrcpy Again
+
+Now that ADB is set up, simply run:
+It should now mirror your Android screen on your Mac.
+
   - Connect your Android phone via USB and run:
     ```bash
     scrcpy
